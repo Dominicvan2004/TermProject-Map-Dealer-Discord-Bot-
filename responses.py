@@ -7,6 +7,10 @@ def get_responses(user_input: str) -> str:
     return 'Noting dear'
   elif 'hello' in lowered:
     return 'Hello there'
+  
+  
+  if lowered == "mapplz":
+    return f'https://osu.ppy.sh/beatmapsets/{randint(1,1075607)}#osu/{randint(1,2250670)}'
 
 
     
