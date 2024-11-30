@@ -19,16 +19,11 @@ redirect_url = os.getenv('REDIRECT_URL')
 
 client = Client.from_client_credentials(client_id, client_secret, redirect_url)
 
-# This gets the responses within the discord chat log
-def get_responses(user_input: str) -> str:
-  lowered: str = user_input.lower()
-  
-  
-
- # f'https://osu.ppy.sh/beatmapsets/{randint(1,1075607)}#osu/{randint(1,2250670)}'
-  # This checks for a specific response and if the response matches "mapplz" it returns a random beatmap
+# # This gets the responses within the discord chat log
+# def get_responses(user_input: str) -> str:
+#   lowered: str = user_input.lower()
+#   if lowered == "mapplz":
 
 
-  beatmap = client.get_beatmapset(4635746)
-  if lowered == "mapplz":
-    return beatmap
+beatmapset = client.get_beatmapset(4838408)
+print(beatmapset.preview_url)
