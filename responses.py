@@ -19,7 +19,7 @@ redirect_url = os.getenv('REDIRECT_URL')
 
 client = Client.from_client_credentials(client_id, client_secret, redirect_url)
 
-# This gets the responses within the discord chat log
+# This reads the chat log and finds the key word "mapplz" then finds a random map via questionably creative method
 def get_responses(user_input: str) -> str:
   lowered: str = user_input.lower()
   if lowered == "mapplz":
@@ -28,7 +28,7 @@ def get_responses(user_input: str) -> str:
             newID = randint(1,100)
             beatmapset = client.get_beatmapset(newID)
             if beatmapset.ranked == 1:
-                print(f"https://osu.ppy.sh/beatmapsets/{newID}")
+                return(f"https://osu.ppy.sh/beatmapsets/{newID}")
                 break
         except:
             continue
