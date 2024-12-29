@@ -10,4 +10,4 @@ I used this youtube video https://youtu.be/UYJDKSah-Ww?si=hVbC7yMIciR1Ticu for t
 
 TO DO:
 
-I havent quite yet figureed out the OSU! API so I gnereated an random integer within the url link of the OSU! beatmap to radomize the selction. This however leads to some deleted and unfinished maps being brought up. With the OSU! API I would be able to fix this and filter through unfinished and deleted maps.
+Probably find a different way to find a random map as this method is super slow and lazy. Also add slash commands.
