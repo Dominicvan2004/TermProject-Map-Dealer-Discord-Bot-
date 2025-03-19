@@ -6,8 +6,3 @@ My goals for this bot is to have it fetch a randomized OSU! map from their datab
 
 
 I used this youtube <a href = "https://youtu.be/UYJDKSah-Ww?si=hVbC7yMIciR1Ticu">video</a> for the foundation of the bot and I'm building the program to pull a random map myself.
-
-
-TO DO:
-
-Probably find a different way to find a random map as my current method is super slow and lazy. Also add slash commands and have search filters.
